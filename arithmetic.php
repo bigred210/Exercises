@@ -28,3 +28,8 @@ echo add(5, 2) . PHP_EOL;
 echo subtract(5, 2) . PHP_EOL;
 echo multiply(5, 2) . PHP_EOL;
 echo divide(5, 2) . PHP_EOL;
+echo "----------\n";
+echo add(5, 2) . PHP_EOL;
+echo add(5, -2) . PHP_EOL;
+echo add(5, 0) * add(2, 0) . PHP_EOL;
+echo add(5, 0) / add(2, 0) . PHP_EOL;
