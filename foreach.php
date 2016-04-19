@@ -21,5 +21,33 @@ foreach ($things as $stuff) {
     elseif (is_array($stuff)) {
         echo "{$stuff} is an array\n";
     }
-
+        echo "====================" . PHP_EOL;
 }
+
+
+$things = array('Sgt. Pepper', "11", null, array(1,2,3), 3.14, "12 + 7", false, (string) 11);
+
+foreach ($things as $stuff) {
+    if (is_scalar($stuff)) {
+        echo "{$stuff} is scalar\n";
+    }
+    elseif (is_array($stuff)) {
+        foreach ($stuff as $value) {
+            echo "$value\n";
+        }
+    }
+        echo "====================" . PHP_EOL;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
