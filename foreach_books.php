@@ -22,3 +22,13 @@ $books = array(
         'pages' => 544
     )
 );
+
+
+foreach ($books as $title => $book) {
+        echo "Title:{$title}\n";
+    foreach ($book as $info => $stuff) {
+        echo "  {$info}:{$stuff}\n ";
+    }
+        echo "---+++++++++++++---"  . PHP_EOL;
+}
+
