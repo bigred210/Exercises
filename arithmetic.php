@@ -24,4 +24,7 @@ function divide($a, $b)
 }
 
 // Add code to test your functions here
-
+echo add(5, 2) . PHP_EOL;
+echo subtract(5, 2) . PHP_EOL;
+echo multiply(5, 2) . PHP_EOL;
+echo divide(5, 2) . PHP_EOL;
