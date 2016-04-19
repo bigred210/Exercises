@@ -32,8 +32,8 @@ for ($i = 1; $i <= 100; $i++) {
     elseif ($i % 5 == 0) {
         `say -v "victoria" BUZZ\n`;
         echo "BUZZ\n";
-    
-    }else {
+    }
+    else {
         `say -v "victoria" {$i}\n`;
         echo "$i\n";
     }
