@@ -29,7 +29,9 @@ function multiply($a, $b)
 
 function divide($a, $b)
 {
-    if (is_numeric($a) && is_numeric($b)) {
+    if ($a = 0 || $b = 0) {
+        return "ERROR: Can't Compute\n";
+    }elseif (is_numeric($a) && is_numeric($b)) {
         return $a / $b;
     } else {
         return "ERROR: Both arguments must be numbers\n";
@@ -43,10 +45,10 @@ echo subtract(5, 2) . PHP_EOL;
 echo "----------\n";
 echo multiply(5, 2) . PHP_EOL;
 echo "----------\n";
-echo divide(5, 2) . PHP_EOL;
+echo divide(5, 0) . PHP_EOL;
 
 echo "----------\n";
-echo "----------\n";
+echo "--++++++--\n";
 echo "----------\n";
 
 echo add(5, 2) . PHP_EOL;
