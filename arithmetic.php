@@ -39,18 +39,18 @@ function divide($a, $b)
 
 function throwErrorMessage($a, $b) 
 {
-    echo "ERROR: Both arguments \$a : {$a} and \$b : {$b} must be numbers\n";
+    return "ERROR: Both arguments \$a : {$a} and \$b : {$b} must be numbers\n";
 }
-function throwErrorMessage2($a, $b) 
+function throwDivisionError($a, $b) 
 {
-    echo "ERROR: Both arguments \$a : {$a} and \$b : {$b} must be numbers or you are trying to divide by zero\n";
+    return "ERROR: Both arguments \$a : {$a} and \$b : {$b} must be numbers or you are trying to divide by zero\n";
 }
 
 echo add(5, 2) . PHP_EOL;
 
 echo "---\n";
 
-echo subtract(5, "fdkfd") . PHP_EOL;
+echo subtract(5, 2) . PHP_EOL;
 
 echo "---\n";
 
