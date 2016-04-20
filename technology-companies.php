@@ -48,3 +48,8 @@ $companies = [
 ksort($companies);
 print_r($companies);
 
+foreach ($companies as $company => $person) {
+    sort($person);
+}
+print_r($person); 
+
