@@ -45,11 +45,16 @@ $companies = [
     ]
 ];
 
+
 ksort($companies);
+
+
+foreach ($companies as $company => $person) {    
+        // sorts names alphabeticallly within the company
+    sort($person);  
+        // re-assigning $person into outer array $companies
+    $companies[$company] = $person; 
+}
 print_r($companies);
 
-foreach ($companies as $company => $person) {
-    sort($person);
-}
-print_r($person); 
 
