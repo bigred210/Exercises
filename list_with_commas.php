@@ -5,21 +5,25 @@ $physicistsString = 'Gordon Freeman, Samantha Carter, Sheldon Cooper, Quinn Mall
 
 $physicistsArray = explode(', ', $physicistsString);
 
-$lastPhysicist = array_pop($physicistsArray);
+// $lastPhysicist = array_pop($physicistsArray);
 
-$newPhysicistsString = implode(', ', $physicistsArray);
+// $newPhysicistsString = implode(', ', $physicistsArray);
 
-$newPhysicistsString .= ' and ' . $lastPhysicist;
+// $newPhysicistsString .= ' and ' . $lastPhysicist;
 
-$famousFakePhysicists = $newPhysicistsString;
+// $famousFakePhysicists = $newPhysicistsString;
 
-echo "Some of the most famous fictional theoretical physicists are {$famousFakePhysicists}." . PHP_EOL;
+
 
 echo "===================================\n";
 
-function humanizedList($physicistsArray) {
+function humanizedList($physicistsArray, $physicistsAlpha = false) {
 
     $lastPhysicist = array_pop($physicistsArray);
+
+    if($physicistsAlpha) {
+        sort($physicistsArray);
+    }
 
     $newPhysicistsString = implode(', ', $physicistsArray);
 
@@ -28,11 +32,16 @@ function humanizedList($physicistsArray) {
         return $famousFakePhysicists;
 }
 
-humanizedList($physicistsArray);
+$famousFakePhysicists = humanizedList($physicistsArray);
 
 echo "Some of the most famous fictional theoretical physicists are {$famousFakePhysicists}." . PHP_EOL;
 
- 
+echo "===================================\n";
+
+$famousFakePhysicists = humanizedList($physicistsArray, true);
+
+echo "Some of the most famous fictional theoretical physicists are {$famousFakePhysicists}." . PHP_EOL;
+
 
 
 
