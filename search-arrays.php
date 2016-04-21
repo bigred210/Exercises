@@ -9,31 +9,35 @@ $compare = ['Tina', 'Dean', 'Mel', 'Amy', 'Michael'];
 
 echo "------------------------\n";
 
-function searchingArrays($query, $names) {
-    if (array_search($query, $names) !== false) {
-        return true . PHP_EOL;
+function searchingArrays($query, $anyArray) {
+    if (array_search($query, $anyArray) !== false) {
+        return true;
     } else {
-        return false . PHP_EOL;
+        return false;
     }
 }
 
-echo searchingArrays('Bob', $names);
+echo searchingArrays('Tina', $names) . PHP_EOL;
 
 echo "------------------------\n";
+echo "------------------------\n";
 
+$arrayOne = $names;
+$arrayTwo = $compare;
 
+function inCommon($arrayOne, $arrayTwo) {
+    $namesCommon = 0;
+    foreach ($arrayOne as $query) {
+        if (searchingArrays($query, $arrayTwo) == true) {
+            $namesCommon++;
+        }
+    }  
+    return $namesCommon; 
+}
 
+echo inCommon($names, $compare) . PHP_EOL;
 
-
-
-
-
-
-
-
-
-
-
+echo "------------------------\n";
 
 
 
