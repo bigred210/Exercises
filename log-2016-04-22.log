@@ -1,0 +1,16 @@
+2016-04-22 07:21:17[INFO]This is an info message.
+2016-04-22 07:21:17[ERROR]This is an info message.
+2016-04-22 07:21:37[INFO]This is an info message.
+2016-04-22 07:21:37[ERROR]This is an info message.
+2016-04-22 07:21:49[INFO]This is an info message.
+2016-04-22 07:21:49[ERROR]This is an info message.
+2016-04-22 07:22:26[INFO]This is an info message.
+2016-04-22 07:22:26[ERROR]This is an info message.
+2016-04-22 07:22:57[INFO]This is an info message.
+2016-04-22 07:22:57[ERROR]This is an info message.
+2016-04-22 02:27:22=CDT[INFO]This is an info message.
+2016-04-22 02:27:22=CDT[ERROR]This is an info message.
+2016-04-22 02:36:21=CDT[INFO]Yay! Info stuff.
+2016-04-22 02:36:21=CDT[ERROR]OOPs! Error Error Error.
+2016-04-22 02:37:18=CDT [INFO] Yay! Info stuff.
+2016-04-22 02:37:18=CDT [ERROR] OOPs! Error Error Error.
